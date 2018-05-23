@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_edit_input"
+        android:title="Edit Input" />
+    <item
+        android:id="@+id/menu_reset_hurricane"
+        android:title="Reset Hurricane" />
+    <item
+        android:id="@+id/menu_view_completed"
+        android:title="Show Completed Tasks" />
+</menu>

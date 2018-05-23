@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_centerVertical="true"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    android:paddingTop="4dp">
+
+    <EditText
+        android:id="@+id/textview_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:hint="HURRICANE NAME"
+        android:paddingLeft="8dp"
+        android:paddingRight="128dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textview_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:hint="HURRICANE LOCATION"
+        android:paddingLeft="8dp"
+        android:paddingRight="128dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_name" />
+
+    <EditText
+        android:id="@+id/textview_evac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:hint="EVACUATION ORDER"
+        android:paddingLeft="8dp"
+        android:paddingRight="128dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_location" />
+
+    <Button
+        android:id="@+id/button_landfall_date_n_time"
+        android:layout_width="0dp"
+        android:layout_height="45sp"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner"
+        android:padding="0dp"
+        android:text="Landfall Date and Time"
+        android:textColor="@color/colorWhite"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_evac"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_act_date_n_time"
+        android:layout_width="0dp"
+        android:layout_height="45sp"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner"
+        android:padding="0dp"
+        android:text="Airport Closing Date and Time"
+        android:textColor="@color/colorWhite"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_landfall_date_n_time" />
+
+    <Button
+        android:id="@+id/button_sheop_date_n_time"
+        android:layout_width="0dp"
+        android:layout_height="45sp"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner"
+        android:padding="0dp"
+        android:text="Shelter Opening Date and Time"
+        android:textColor="@color/colorWhite"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_act_date_n_time" />
+
+    <Button
+        android:id="@+id/button_hnkrdn_date_n_time"
+        android:layout_width="0dp"
+        android:layout_height="45sp"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner"
+        android:padding="0dp"
+        android:text="Hunker Down Date and Time"
+        android:textColor="@color/colorWhite"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sheop_date_n_time" />
+
+    <Button
+        android:id="@+id/button_reentry_date_n_time"
+        android:layout_width="0dp"
+        android:layout_height="45sp"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner"
+        android:padding="0dp"
+        android:text="Expected Reentry Date and Time"
+        android:textColor="@color/colorWhite"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_hnkrdn_date_n_time" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_reentry_date_n_time">
+
+        <Button
+            android:id="@+id/button_cfcreg1_date_n_time"
+            android:layout_width="130sp"
+            android:layout_height="40sp"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="4dp"
+            android:text="Regional call1"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_cfcreg2_date_n_time"
+            android:layout_width="130sp"
+            android:layout_height="40sp"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="4dp"
+            android:text="Regional call2"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button_cfcnhq1_date_n_time"
+            android:layout_width="130sp"
+            android:layout_height="40sp"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="4dp"
+            android:text="NHQ call1"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_cfcnhq2_date_n_time"
+            android:layout_width="130sp"
+            android:layout_height="40sp"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="4dp"
+            android:text="NHQ call2"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="inputTakenClick"
+        android:padding="8dp"
+        android:text="FINISH INPUT"
+        android:textColor="@color/colorWhite"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+</android.support.constraint.ConstraintLayout>
